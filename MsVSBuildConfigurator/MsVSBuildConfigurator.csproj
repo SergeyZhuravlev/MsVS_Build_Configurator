@@ -49,7 +49,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\ReferentNet\BusinessCommon\Delimon.Win32.IO\Delimon.Win32.IO.csproj">
+    <ProjectReference Include="..\Libs\Delimon.Win32.IO\Delimon.Win32.IO.csproj">
       <Project>{d33e1407-bf69-4e4b-b190-e128b0948318}</Project>
       <Name>Delimon.Win32.IO</Name>
     </ProjectReference>

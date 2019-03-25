@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsVSBuildConfigurator", "MsVSBuildConfigurator\MsVSBuildConfigurator.csproj", "{A4AEF4CD-CF7F-4C3A-9E64-BC9D64B3CF9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delimon.Win32.IO", "..\..\ReferentNet\BusinessCommon\Delimon.Win32.IO\Delimon.Win32.IO.csproj", "{D33E1407-BF69-4E4B-B190-E128B0948318}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delimon.Win32.IO", "Libs\Delimon.Win32.IO\Delimon.Win32.IO.csproj", "{D33E1407-BF69-4E4B-B190-E128B0948318}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,18 +45,18 @@ Global
 		{D33E1407-BF69-4E4B-B190-E128B0948318}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D33E1407-BF69-4E4B-B190-E128B0948318}.Debug|x86.ActiveCfg = Debug|x86
 		{D33E1407-BF69-4E4B-B190-E128B0948318}.Debug|x86.Build.0 = Debug|x86
-		{D33E1407-BF69-4E4B-B190-E128B0948318}.Release with Debug|Any CPU.ActiveCfg = Release|Any CPU
-		{D33E1407-BF69-4E4B-B190-E128B0948318}.Release with Debug|Any CPU.Build.0 = Release|Any CPU
-		{D33E1407-BF69-4E4B-B190-E128B0948318}.Release with Debug|x86.ActiveCfg = Release|x86
-		{D33E1407-BF69-4E4B-B190-E128B0948318}.Release with Debug|x86.Build.0 = Release|x86
+		{D33E1407-BF69-4E4B-B190-E128B0948318}.Release with Debug|Any CPU.ActiveCfg = Release with Debug|Any CPU
+		{D33E1407-BF69-4E4B-B190-E128B0948318}.Release with Debug|Any CPU.Build.0 = Release with Debug|Any CPU
+		{D33E1407-BF69-4E4B-B190-E128B0948318}.Release with Debug|x86.ActiveCfg = Release with Debug|x86
+		{D33E1407-BF69-4E4B-B190-E128B0948318}.Release with Debug|x86.Build.0 = Release with Debug|x86
 		{D33E1407-BF69-4E4B-B190-E128B0948318}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D33E1407-BF69-4E4B-B190-E128B0948318}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D33E1407-BF69-4E4B-B190-E128B0948318}.Release|x86.ActiveCfg = Release|x86
 		{D33E1407-BF69-4E4B-B190-E128B0948318}.Release|x86.Build.0 = Release|x86
-		{D33E1407-BF69-4E4B-B190-E128B0948318}.Single_Release with Debug|Any CPU.ActiveCfg = Single_Release|Any CPU
-		{D33E1407-BF69-4E4B-B190-E128B0948318}.Single_Release with Debug|Any CPU.Build.0 = Single_Release|Any CPU
-		{D33E1407-BF69-4E4B-B190-E128B0948318}.Single_Release with Debug|x86.ActiveCfg = Single_Release|x86
-		{D33E1407-BF69-4E4B-B190-E128B0948318}.Single_Release with Debug|x86.Build.0 = Single_Release|x86
+		{D33E1407-BF69-4E4B-B190-E128B0948318}.Single_Release with Debug|Any CPU.ActiveCfg = Single_Release with Debug|Any CPU
+		{D33E1407-BF69-4E4B-B190-E128B0948318}.Single_Release with Debug|Any CPU.Build.0 = Single_Release with Debug|Any CPU
+		{D33E1407-BF69-4E4B-B190-E128B0948318}.Single_Release with Debug|x86.ActiveCfg = Single_Release with Debug|x86
+		{D33E1407-BF69-4E4B-B190-E128B0948318}.Single_Release with Debug|x86.Build.0 = Single_Release with Debug|x86
 		{D33E1407-BF69-4E4B-B190-E128B0948318}.Single_Release|Any CPU.ActiveCfg = Single_Release|Any CPU
 		{D33E1407-BF69-4E4B-B190-E128B0948318}.Single_Release|Any CPU.Build.0 = Single_Release|Any CPU
 		{D33E1407-BF69-4E4B-B190-E128B0948318}.Single_Release|x86.ActiveCfg = Single_Release|x86
