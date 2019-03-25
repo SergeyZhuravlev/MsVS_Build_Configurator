@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A4AEF4CD-CF7F-4C3A-9E64-BC9D64B3CF9C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>MsVS_Build_Configurator</RootNamespace>
-    <AssemblyName>MsVS_Build_Configurator</AssemblyName>
+    <RootNamespace>MsVSBuildConfigurator</RootNamespace>
+    <AssemblyName>MsVSBuildConfigurator</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ReferentNet\BusinessCommon\Delimon.Win32.IO\Delimon.Win32.IO.csproj">
+      <Project>{d33e1407-bf69-4e4b-b190-e128b0948318}</Project>
+      <Name>Delimon.Win32.IO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
