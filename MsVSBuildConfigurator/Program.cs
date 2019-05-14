@@ -808,7 +808,7 @@ namespace MsVSBuildConfigurator
         private static void UpdatePreprocessorDefinition(XElement element, string simpleXPath, string keyAdded, params string[] keysRemoved)
         {
             var baseSymbol = "%(PreprocessorDefinitions)";
-            var newKey = keyAdded + ";" + baseSymbol;
+            var newKey = (string.IsNullOrWhiteSpace(keyAdded) ? "" : (keyAdded + ";")) + baseSymbol;
             InsertOrUpdateNodeValue(element, simpleXPath, newKey, source =>
             {
                 if (string.IsNullOrWhiteSpace(source))
@@ -816,7 +816,11 @@ namespace MsVSBuildConfigurator
                 var splited = source.Split(new[] { ';' }, StringSplitOptions.None);
                 var keysRemovedFull = keysRemoved.Concat(new[] { baseSymbol }).ToList();
                 var splitedAfterRemove = splited.Where(key => !keysRemovedFull.Any(removed => key.Contains(removed)));
-                return string.Join(";", new[] { keyAdded }.Concat(splitedAfterRemove)) + ";" + baseSymbol;
+                if(string.IsNullOrWhiteSpace(keyAdded))
+                    keyAdded = string.Join(";", splitedAfterRemove);
+                else
+                    keyAdded = string.Join(";", new[] {keyAdded}.Concat(splitedAfterRemove));
+                return (string.IsNullOrWhiteSpace(keyAdded) ? "" : (keyAdded + ";")) + baseSymbol;
             });
         }
 
