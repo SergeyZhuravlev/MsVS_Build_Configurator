@@ -373,7 +373,7 @@ namespace MsVSBuildConfigurator
 
         public static string PropertySheetNameChanger(string propertyPath)
         {
-            if (propertyPath.ToUpper().Contains("Taxcom.Cpp.".ToUpper()))
+            if (propertyPath.ToUpper().Contains("Props.Cpp.".ToUpper()))
                 return propertyPath.Replace("vc12", "vc141");
             return propertyPath;
         }
